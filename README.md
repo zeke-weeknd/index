@@ -15,4 +15,21 @@
 10.思考页面如何做到更高的体验
 
 ## 2.页面包含两个端，需要做响应式
-响应式页面应该使用媒体查询，media
+一、在html头部添加以下代码，用来显示兼容移动设备的显示效果
+
+index.html 第5行<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    width=device-width ：宽度等于当前设备的宽度
+
+　　initial-scale=1 ：初始的缩放比例(默认为1)
+
+　　minimum-scale=1 ：允许用户缩放到的最小比例(默认为1)
+
+　　maximum-scale=1 ：允许用户缩放到的最大比例(默认为1)
+
+　　user-scalable=no ：用户是否可以手动缩放(默认为no)
+
+二、响应式页面应该使用媒体查询，media。在宽度小于768px时就切换为移动端样式
+结构:@media设备类型and (设备特性){样式代码｝
+
+三、使用float浮动实现双栏布局，右侧宽度固定，左侧自适应
