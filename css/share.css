@@ -1,0 +1,63 @@
+.box {
+    width: 70%;
+    margin: 30px 0;
+}
+
+.video-box {
+    position: relative;
+    height: 490px;
+    border: 10px solid #C6544C;
+    border-radius: 15px 0 15px 15px;
+}
+
+.video-box .share-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    right: -10px;
+    height: 35px;
+    line-height: 30px;
+    padding: 0 10px;
+    background: #C6544C;
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+}
+
+.social-share {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.share-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.share-video {
+    float: left;
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.share-video a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+}
+
+.wechat-qrcode {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background: #fff;
+}
+
+.share-wechat:hover .wechat-qrcode {
+    display: block;
+}
