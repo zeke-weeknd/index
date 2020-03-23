@@ -33,3 +33,7 @@ index.html 第5行<meta name="viewport" content="width=device-width, initial-sca
 结构:@media设备类型and (设备特性){样式代码｝
 
 三、使用float浮动实现双栏布局，右侧宽度固定，左侧自适应
+
+
+四、社交分享功能
+使用share.js第三方包

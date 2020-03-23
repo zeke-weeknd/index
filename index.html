@@ -6,10 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./icons/font_9hd2kfs2q34/iconfont.css">
+
+    <!-- 映入share.js第三方包 -->
+    <!-- <link rel="stylesheet" href="./css/share.css"> -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="./css/share.js-master/dist/css/share.min.css">
+    <script src="./css/share.js-master/dist/js/jquery.share.min.js"></script>
+
+
 </head>
 <body>
     <!-- 顶部导航条 -->
     <div class="nav">
+        <!-- 左边的logo和标题 -->
+        <div class="logo-title">
+            <image class="logo" src="./images/logo-要改暂用.png" width="45px"/>
+            <text class="">交易曦游记</text>
+        </div>
+        <!-- 右边的用户信息 -->
         <div class="userMassage">
             <div class="user">
                 <image class="userImage" src="./images/user.png" width="36px"/>
@@ -24,7 +38,6 @@
     <div class="main">
         <!-- 右侧固定栏内容 -->
         <div class="right">
-
             <!-- 右侧栏固定内容 -->
             <div class="rightSide">
                 <div class="titleBox1">交易人员介绍</div>
@@ -33,34 +46,78 @@
                     <div class="person">
                          <div class="lin">
                             <img src="./images/user.png" alt="" width="60px">
+                            
+                            <div class="linName">
+                                <text>林则徐</text>
+                                <div class="linNameIcon"><div class="linNameIconInner"></div></div>
+                            </div>
+                            
                             <text class="despcription">
+                                <span class="littleTran"></span>
                                 林则徐（1785年），福建<br/>
                                 清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
                             </text>
-                              
+                            
+                         </div>
+
+                         <div class="lin2">
+                            <img src="./images/user.png" alt="" width="60px">
+                            <div class="linName">
+                                <text>徐悲鸿</text>
+                                <div class="linNameIcon"><div class="linNameIconInner"></div></div>
+                            </div>
+                            <!-- <text class="despcription">
+                                林则徐（1785年），福建<br/>
+                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                            </text> -->
+                         </div>
+                         <div class="lin3">
+                             
+                            <img src="./images/user.png" alt="" width="60px">
+                            <div class="linName">
+                                <text>小小彬</text>
+                                <div class="linNameIcon"><div class="linNameIconInner"></div></div>
+                            </div>
+                            <!-- <text class="despcription">
+                                林则徐（1785年），福建<br/>
+                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                            </text> -->
+                         </div>
+                         <div class="lin4">
+                            <img src="./images/user.png" alt="" width="60px">
+                            <div class="linName">
+                                <text>小小彬</text>
+                                <div class="linNameIcon"><div class="linNameIconInner"></div></div>
+                            </div>
+                            <!-- <text class="despcription">
+                                林则徐（1785年），福建<br/>
+                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                            </text> -->
                          </div>
                     </div>
                     <!-- 本集话题讨论 -->
                     <div class="topic">
-                        <div class="titleBox2">本集话题讨论</div>
+                        <div class="titleBox2"><span class="titleBox2Span"></span>本集话题讨论<span class="titleBox2Span"></span></div>
                         <text class="topicText">
                             交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？
                         </text>
-                        <div class="option1">
-                            <img src="./images/左边@2x.png" alt="" width="126px">
-                            <text class="optionText">投票</text>
-                            <text class="option1Text">
-                                我是选项1
-                            </text>
-                            <text class="optionNum">已投1209票</text>
-                        </div>
-                        <div class="option2">
-                            <img src="./images/右边@2x.png" alt="" width="126px" height="74px">
-                            <text class="optionText">投票</text>
-                            <text class="option1Text">
-                                我是选项2
-                            </text>
-                            <text class="optionNum">已投1209票</text>
+                        <div class="optionBox">
+                            <div class="option1">
+                                <img src="./images/左边@2x.png" alt="" width="126px">
+                                <text class="optionText">投票</text>
+                                <text class="option1Text">
+                                    我是选项1
+                                </text>
+                                <text class="optionNum">已投1209票</text>
+                            </div>
+                            <div class="option2">
+                                <img src="./images/右边@2x.png" alt="" width="126px" height="74px">
+                                <text class="optionText">投票</text>
+                                <text class="option1Text">
+                                    我是选项2
+                                </text>
+                                <text class="optionNum">已投1209票</text>
+                            </div>
                         </div>
                           
                     </div>
@@ -89,14 +146,13 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <!-- 左侧栏内容 -->
         <div class="left">
             <!-- 顶部图片 -->
-            <div class="pic"> 
+            <div class="pic">
+                <img src="./images/banner.png" alt=""  class="titleImg10"> 
                 <img src="./images/沙漠人@2x.png" alt="" class="titleImg2" width="219px">
                 <img src="./images/涂鸦@2x.png" alt="" width="929px" class="titleImg3">
                 <img src="./images/火箭烟雾@2x.png" alt="" width="124px" class="titleImg4">
@@ -116,16 +172,32 @@
                             <img class="shareImg" src="./images/分享@2x.png" alt="" width="20px">
                             <text class="shareText1">分享</text>
                         </div>
-                        <span class="iconfont icon-weixin"></span>
-                        <span class="iconfont icon-weibo"></span>
-                        <span class="iconfont icon-QQ"></span>
-                        <span class="iconfont icon-QQkongjian"></span>
+
+                        <!-- 微信分享图标 -->
+                        <div class="social-share share-wechat" data-sites="wechat"
+                             data-wechat-qrcode-helper="扫一扫，分享到朋友圈"
+                             >
+                            <!-- <span class="iconfont icon-weixin"></span> -->
+                        </div>
+                        <div class="social-share" data-sites="weibo" title="微博">
+                        </div>
+                        <div class="social-share" data-sites="qq" title="QQ">
+                            <!-- <span class="iconfont icon-QQ"></span> -->
+                        </div>
+                        <div class="social-share" data-sites="qzone" title="QQ空间">
+                            <!-- <span class="iconfont icon-QQkongjian"></span> -->
+                        </div>
                     </div>
                     <video src="http://jin10videoserver.jin10.com/Act-ss-mp4-hd/f2f070abcaa64e839152263594690edb/xiyoujiE06.mp4" 
                         poster="https://cdn.jin10.com/pic/04/cf16ac95e427a6b731229b2c5154f5ba.png"
                         width="100%" height="100%" controls></video>
                 </div>
             </div>
+
+
+
+
+
             <!-- 往期视频 -->
             <div class="historyVideo">
                 <div class="historyTop">
@@ -138,19 +210,19 @@
                 </div>
                 <div class="historyBottom">
                     <div class="video1">
-                        <img src="./images/pic1.png" alt="" width="336px">
+                        <img src="./images/pic1.png" alt="" width="100%">
                         <text>八周交易计划2 《我的信仰》</text>
                         <br>
                         <text>2017-01-20</text>
                     </div>
                     <div class="video2">
-                        <img src="./images/pic2.png" alt="" width="336px">
+                        <img src="./images/pic2.png" alt="" width="100%">
                         <text>第八集：巅峰之战！谁是黑马？</text>
                         <br>
                         <text>2017-01-20</text>
                     </div>
                     <div class="video3">
-                        <img src="./images/pic3.png" alt="" width="336px">
+                        <img src="./images/pic3.png" alt="" width="100%">
                         <text>巨债承压动真格，赚钱才是真本事！</text>
                         <br>
                         <text>2017-01-20</text>

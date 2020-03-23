@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 /*当页面大于768px时，大屏幕，主要是PC端*/
-@media (max-width: 1920px) {
+@media (min-width: 768px) {
     html{
         /* width:1920px; */
         /* height:2548px; */
@@ -22,6 +22,9 @@
     .nav{
         height: 77px;
         /* background: rgb(255, 227, 162); */
+    }
+    .logo-title{
+        display: none;
     }
     .userMassage{
         height: 100%;
@@ -126,6 +129,9 @@
         border-radius: 50%;
         margin: 20px;
     }
+    .lin2,.lin3,.lin4{
+        display: none;
+    }
     .despcription{
         display: inline-block;
         width: 65%;
@@ -155,6 +161,9 @@
         color:rgba(255,255,255,1);
         line-height:28px;
         letter-spacing:1px; 
+    }
+    .titleBox2Span{
+        display: none;
     }
     .topicText{
         display: block;
@@ -345,6 +354,9 @@
         left: 270px;
         font-size: 20px;
     }
+    .titleImg10{
+        display: none;
+    }
     .video{
         width: 100%;
         height: 680px;
@@ -383,7 +395,7 @@
         right: -10px;
         top: -40px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
     .shareText1{
@@ -398,9 +410,10 @@
         font-size: 16px;
         color: #fff;
     }
-    .share .icon-weibo{
-        font-size: 16px;
-    }
+    
+
+
+
     .historyVideo{
         width: 100%;
         height: 340px;
@@ -725,8 +738,682 @@
 /*当页面小于768px时，大屏幕，主要是移动端*/
 @media (max-width: 768px) {
     html{
-        background:rgb(255, 219, 133);
+        background:rgba(255,252,245,1);
+        width: 100%;
+        /* height: 3357px; */
     }
+    text{
+        font-size:30px;
+        font-family:MicrosoftYaHei;
+        color:rgba(90,50,60,1);
+        line-height:40px;
+        letter-spacing:1px;
+    }
+    .nav{
+        width: 100%;
+        height: 66px;
+        /* background-color: #fff; */
+        overflow: hidden;
+    }
+    /* 左边的logo和标题 */
+    .logo-title{
+        display: inline-flex;
+        width: 250px;
+        height: 100%;
+        /* background-color: rgb(230, 230, 230); */
+        justify-content: center;
+        align-items: center;
+    }
+    /* 右边的用户信息 */
+    .userMassage{
+        float: right;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 240px;
+        /* background: rgb(253, 208, 103); */
+    }
+    .user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .userImage{
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .welcome{
+        display: inline-block;
+        font-size:20px;
+        font-family: MicrosoftYaHei;
+        color:rgba(90,50,60,1);
+        line-height:19px;
+    }
+    .Triangle{
+        width: 0;
+        height: 0;
+        border-top: 10px solid rgba(169,169,169,1);
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+
+
+    .main{
+        position: relative;
+        width: 100%;
+    }
+    /* 先将右边的侧边栏绝对定位，移到底部等待后续操作 */
+    .right{
+        position: absolute;
+        top: 830px;
+        width: 100%;
+        /* height: 1000px; */
+        /* background-color: rgb(255, 227, 227); */
+
+    }
+    .rightSide{
+        position: relative;
+
+    }
+    .titleBox1{
+        width:524px;
+        height:64px;
+        background:rgba(198,84,76,1);
+        border-radius:12px;
+        border:2px solid rgba(119,105,105,1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:30px;
+        font-family:Helvetica;
+        color:rgba(255,255,255,1);
+        line-height:19px;
+        letter-spacing:2px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .image,.activity,.bottom{
+        display: none;
+    }
+    .person{
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        /* background-color: #fff; */
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    .person img{
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    
+    .linName{
+        /* position: absolute; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .linNameIcon{
+        width:22px;
+        height:22px;
+        background:rgba(90,50,60,1);
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .linNameIconInner{
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid #fff;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .despcription{
+        position: absolute;
+        width: 95%;
+        height: 155px;
+        background:rgba(255,255,255,1);
+        border:1px solid rgba(90,50,60,1);
+        border-radius: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size:24px;
+        margin-top: 20px;
+    }
+    .littleTran{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-left: 1px solid rgba(90,50,60,1);
+        border-top: 1px solid rgba(90,50,60,1);
+        background-color: #fff;
+        position: absolute;
+        top: -11px;
+        left: 60px;
+        transform: rotate(45deg);
+    }
+    .lin2 .linNameIcon{
+        background:rgba(180,160,160,1);
+    }
+    .lin2 .linNameIconInner{
+        border-top: 8px solid #fff;
+        border-bottom: 8px solid transparent;
+        margin-top: 20px;
+    }
+    .lin3 .linNameIcon{
+        background:rgba(180,160,160,1);
+    }
+    .lin3 .linNameIconInner{
+        border-top: 8px solid #fff;
+        border-bottom: 8px solid transparent;
+        margin-top: 20px;
+    }
+    .lin4 .linNameIcon{
+        background:rgba(180,160,160,1);
+    }
+    .lin4 .linNameIconInner{
+        border-top: 8px solid #fff;
+        border-bottom: 8px solid transparent;
+        margin-top: 20px;
+    }
+    .topic{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        /* border-bottom: 1px solid #000; */
+    }
+    .titleBox2{
+        font-size:32px;
+        font-family:Helvetica;
+        color:rgba(90,50,60,1);
+        line-height:38px;
+        letter-spacing:1px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .titleBox2Span{
+        display: inline-block;
+        width:16px;
+        height:16px;
+        border:2px solid rgba(90,50,60,1);
+        border-radius: 50%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .topicText{
+        display: inline-block;
+        letter-spacing:2px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .optionBox{
+        width: 100%;
+        height: 400px;
+        /* background-color: #fff; */
+        border-bottom: 1px solid rgba(217,210,210,1);   
+    }
+    .option1, .option2{
+        display: inline-block;
+        width:330px;
+        height:258px;
+        background:rgba(255,255,255,1);
+        border-radius:6px;
+        border:3px solid rgba(180,160,160,1);
+        position: relative;
+    }
+    .option2{
+        /* margin-left: 20px; */
+    }
+    .option1{
+        /* margin-right: 20px; */
+        float: right;
+    }
+    
+    .topic img{
+        width:296px;
+        height:187px;
+        border-radius:4px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+
+    }
+    .optionText{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width:198px;
+        height:84px;
+        background:rgba(198,84,76,1);
+        border-radius:40px;
+        font-size:36px;
+        font-family:Helvetica;
+        color:rgba(255,255,255,1);
+        line-height:43px;
+        letter-spacing:3px;
+        position: absolute;
+        left: 50%;
+        bottom: -50%;
+        transform: translate(-50%,-95%);
+    }
+    .option1Text,.option2Text{
+        display: none;
+    }
+    .optionNum{
+        font-size:24px;
+        color:rgba(90,50,60,1);
+        line-height:29px;
+        letter-spacing:2px;
+        position: absolute;
+        left: 50%;
+        bottom: -100px;
+        transform: translateX(-50%);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .left{
+        width: 100%;
+    }
+    .pic{
+        width: 100%;
+        /* height: 240px; */
+        margin-bottom: 40px;
+    }
+    .pic .titleImg1,.titleImg2,.titleImg3,.titleImg4,.titleImg5,.titleImg6,.titleImg7,.titleImg8,.titleImg9{
+        display: none;
+    }
+   
+    .video{
+        width: 100%;
+        padding-left: 26px;
+        padding-right: 26px;
+        margin-bottom: 1120px;
+        
+    }
+    .vedioText{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .videoContent{
+        width: 100%;
+        /* height: 100%; */
+        border-bottom: 1px solid rgba(217,210,210,1);
+        margin-bottom: 30px;
+        /* background-color: #fff; */
+    }
+    .share{
+        display: none;
+    }
+    .videoContent video{
+        height:402px;
+        border-radius:11px;
+        border:10px solid rgba(198,84,76,1);
+        margin-bottom: 30px;
+        
+    }
+    .historyVideo{
+        width: 100%;
+        /* height: 340px; */
+        /* background-color: rgb(255, 205, 205); */
+        margin-bottom: 40px;
+        /* border-bottom: 1px solid rgba(217,210,210,1); */
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    .historyTop{
+        width: 100%;
+        height: 30px;
+        /* background-color: rgb(255, 173, 173); */
+        margin-bottom: 30px;
+    }
+    .history{
+        float: left;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .history text{
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-block;  
+        font-size:18px;
+        letter-spacing:2px;
+    }
+    .more{
+        float: right;
+        color:rgba(180,160,160,1);
+        line-height: 30px;
+        font-size:18px;
+        height: 100%;
+    }
+    .historyBottom{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(217,210,210,1);
+    }
+    .historyBottom div{
+        width:341px;
+        height:268px;
+        background-color: #fff;
+        font-size: 16px;
+    }
+    .historyBottom text{
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .video3{
+        display: none;
+    }
+
+
+    .massage{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .massageTop{
+        width: 100%;
+        /* height: 196px; */
+        background:rgba(255,255,255,1);
+        border-radius:12px;
+        border:2px solid rgba(180,160,160,1);
+        padding: 30px 20px;
+        position: relative;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+
+    }
+    .massageTop img{
+        position: absolute;
+        bottom: -45px;
+        z-index: 1;
+    }
+    .massageTop .massageLeft{
+        left: 27px;
+    }
+    .massageTop .massageRight{
+        right: 27px;
+    }
+
+    .massageIcon{
+        display: inline-block;
+        width:33px;
+        height:33px;
+        border: 1px solid rgba(90,50,60,1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .massageText{
+        display: inline-block;
+        flex: 1;
+        font-size:24px;
+    }
+    .massageBottom{
+        width:100%;
+        background:rgba(255,255,255,1);
+        border-radius:23px;
+        border:2px solid rgba(180,160,160,1);
+        position: relative;
+        margin-bottom: 60px;
+    }
+    .massageBottom .buttonIcon{
+        display: inline-block;
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        font-size: 28px;
+        top: 88px;
+        left: 69px;
+        z-index: 1;
+    }
+    .button{
+        position: absolute;
+        top: 88px;
+        right: 69px;
+        z-index: 1;
+    }
+    .button button{
+        width:72px;
+        height:30px;
+        border-radius:20px;
+        border:1px solid rgba(180,160,160,1);
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(180,160,160,1);
+        line-height:18px;
+        letter-spacing:1px;
+    }
+    .button .register{
+        background:rgba(198,84,76,1);
+        color: #fff;
+    }
+    .massageInput{
+        width:90%;
+        height:102px;
+        border-radius:12px;
+        border:2px solid rgba(180,160,160,1);
+        margin-top: 54px;
+        display: block;
+        /* display: inline-flex;
+        align-items: center; */
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-left: 82px;
+        padding-right: 82px;
+        margin-bottom: 50px;
+    }
+    .commentNum{
+        /* display: block; */
+        width:100%;
+        height: 20px;
+        /* background-color: rgb(255, 223, 223); */
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .commentNum div{
+        position: absolute; 
+        width: 92%;
+        height: 1px;
+        background-color: rgba(180,160,160,1);
+    }
+    .commentNum text{
+        display: inline-block;
+        color:rgba(180,160,160,1);
+        /* width: 150px; */
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 100%;
+        background-color: #fff;
+        z-index: 1;
+        text-align: center;
+        font-size: 20px;
+    }
+    .comment{
+        width: 100%;
+        /* height: 500px; */
+        /* background-color: rgb(255, 212, 212); */
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 30px;
+    }
+    .commentOne{
+        width: 100%;
+        /* background-color: rgb(255, 174, 174); */
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .commentOne:nth-child(1){
+        display: none;
+    }
+   
+    .commentIcon{
+        width: 7%;
+        height: 100%;
+        font-size:14px;
+        font-family:MicrosoftYaHei;
+        color:rgba(180,160,160,1);
+        line-height:19px;
+        letter-spacing:1px;
+        text-align: center;
+        line-height: 38px;
+        position: absolute;
+        right: 20px;
+    }
+    .commentIcon1{
+        width: 40px;
+        height: 35px;
+        background:rgba(234,234,234,1);
+        position: relative;
+        left: 0;
+        top: 12%;
+    }
+    .commentIconTop{
+        width: 0px;
+        height: 0px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid rgba(234,234,234,1);
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        position: absolute;
+        top: -20px;
+    }
+    .commentIconTop1{
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid rgba(180,160,160,1);;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+    .commentBox{
+        width: 93%;
+        height: 100%;
+        position: relative;
+    }
+    .commentUserMassage{
+        width: 100%;
+        height: 40%;
+        /* background-color: rgb(119, 119, 119); */
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .commentUserMassage img{
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    .commentUserMassage text{
+        position: absolute;
+        left: 70px;
+    }
+    .commentUserMassage1{
+        top: 0px;
+        font-size:24px;
+        letter-spacing:2px;
+    }
+    .commentUserMassage2{
+        top: 40px;
+        color:rgba(180,160,160,1);
+        font-size:20px;
+        letter-spacing:2px;
+    }
+    .commentMassage{
+        display: inline-block;
+        position: relative;
+        font-size:24px;
+        width:95%;
+        margin-left: 70px;
+        padding-bottom: 80px;
+        border-bottom: 1px solid rgba(180,160,160,1);
+    }
+    .commentMassageIcon{
+        position: absolute;
+        color:rgba(180,160,160,1);
+        right: 40px;
+        bottom: 20px;
+    }   
+    .commentMassageIcon1{
+        position: absolute;
+        color:rgba(180,160,160,1);
+        right: -20px;
+        bottom: 10px;
+        font-size:20px;
+    }
+
 }
 
 
