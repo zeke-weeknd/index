@@ -188,9 +188,9 @@
                             <!-- <span class="iconfont icon-QQkongjian"></span> -->
                         </div>
                     </div>
-                    <video src="http://jin10videoserver.jin10.com/Act-ss-mp4-hd/f2f070abcaa64e839152263594690edb/xiyoujiE06.mp4" 
+                    <video id="video" src="http://jin10videoserver.jin10.com/Act-ss-mp4-hd/f2f070abcaa64e839152263594690edb/xiyoujiE06.mp4" 
                         poster="https://cdn.jin10.com/pic/04/cf16ac95e427a6b731229b2c5154f5ba.png"
-                        width="100%" height="100%" controls></video>
+                        width="100%" height="100%" controls ></video>
                 </div>
             </div>
 
@@ -209,19 +209,19 @@
                     <text class="more">查看更多</text>
                 </div>
                 <div class="historyBottom">
-                    <div class="video1">
-                        <img src="./images/pic1.png" alt="" width="100%">
+                    <div class="video1" videoSrc="http://jin10videoserver.jin10.com/Act-ss-mp4-hd/f2f070abcaa64e839152263594690edb/xiyoujiE06.mp4">
+                        <img src="./images/pic1.png" alt="" width="100%" >
                         <text>八周交易计划2 《我的信仰》</text>
                         <br>
                         <text>2017-01-20</text>
                     </div>
-                    <div class="video2">
+                    <div class="video2"  videoSrc="http://jin10videoserver.jin10.com/Act-ss-mp4-hd/31e190a289c941eeb9d4b3384885a734/IG666.mp4">
                         <img src="./images/pic2.png" alt="" width="100%">
                         <text>第八集：巅峰之战！谁是黑马？</text>
                         <br>
                         <text>2017-01-20</text>
                     </div>
-                    <div class="video3">
+                    <div class="video3"  videoSrc="http://jin10videoserver.jin10.com/Act-ss-mp4-hd/d6a20c3793bf4614a4d3b1e4ea6691b4/jiaoyixiyouji.mp4">
                         <img src="./images/pic3.png" alt="" width="100%">
                         <text>巨债承压动真格，赚钱才是真本事！</text>
                         <br>
@@ -252,11 +252,11 @@
                 <div class="massageBottom">
                     <span class="iconfont icon-xinxi buttonIcon"></span>
                     <div class="button">
-                        <button class="login">登录</button>
+                        <button class="login">评论</button>
                         <button class="register">注册</button>
                     </div>
                     <!-- 输入框部分 -->
-                    <input type="text" class="massageInput" placeholder="请输入要查找的关键字" >
+                    <input type="text" class="massageInput" placeholder="请输入要查找的关键字" value="">
                     <!-- 中间分割部分 -->
                     <div class="commentNum">
                         <div></div>
@@ -266,7 +266,7 @@
                           
                     </div>
                     <!-- 评论部分 -->
-                    <div class="comment">
+                    <div class="comment" id="comment">
                         <!-- 一条评论 -->
                         <div class="commentOne">
                             <!-- 左侧 -->
@@ -275,7 +275,7 @@
                                 <div class="commentIcon1">
                                     <div class="commentIconTop"></div>
                                     <div class="commentIconTop1"></div>
-                                    0
+                                    <span>0</span>
                                 </div>
                             </div>
                             <!-- 右侧 -->
@@ -337,4 +337,5 @@
         
     </div>
 </body>
+<script src="index.js"></script>
 </html>

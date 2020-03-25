@@ -37,3 +37,19 @@ index.html 第5行<meta name="viewport" content="width=device-width, initial-sca
 
 四、社交分享功能
 使用share.js第三方包
+
+五、往期回顾，点击往期回顾视频后，将存放在自定义属性中的视频src地址设置为播放窗口中的src地址
+
+六、进入动画交互
+使用css的@keyframes定义动画帧,在选择器里面用animation
+animation-name	规定 @keyframes 动画的名称
+animation-duration	规定动画完成一个周期所花费的秒或毫秒。默认是 0
+animation-timing-function	规定动画的速度曲线。默认是 "ease"
+animation-delay	规定动画何时开始。默认是 0
+
+七、评论功能
+使用Object.definedProperty实现双向数据绑定，获取输入框中的实时评论数据，克隆一个评论节点，将这个评论节点的内容替换成输入框中的评论，再append到评论盒子中，实现评论的功能。
+
+八、点赞功能
+点击点赞按钮，点赞数加1
+
